@@ -12,12 +12,10 @@
 			if(code == 1){
 				printf("1.DATA BUNDLES (NO EXPIRY)\n");
 				printf("2.Calls & SMS (NO EXPIRY) \n");
-				printf("3.Data Bundle WITH EXPIRY\n");
 				printf("enter option:");
 				scanf("%d",&option); 
-				 
-				 {
-				 	if(option == 1){
+				{
+					if(option == 1){
 				 		printf("1.Buy For My Number\n");
 				 		printf("2.Buy For Another Number\n");
 				 		printf("3.Okoa Data\n");
@@ -81,8 +79,9 @@
 								   	if(amount2 <= 10){
 										   int bundle4=amount2 * 2;
 										   printf("confirm purchase of %d MB for %ld\n",bundle4,other);
-										   printf("1.Accept");
+										   printf("1.Accept\n");
 										   printf("2.Cancel\n");
+										   printf("enter option:");
 										   scanf("%d",&accept4);
 										   {
 										   	if(accept4 == 1){
@@ -96,6 +95,7 @@
 																   printf("confirm purchase of %.1f MB for %ld\n",bundle5,other);
 										                           printf("1.Accept\n");
 										                           printf("2.Cancel\n");
+										                           printf("enter option:");
 										                           scanf("%d",&accept5);
 										   {
 										   	if(accept5 == 1){
@@ -106,9 +106,10 @@
 							      	  				  else {
                                                          if(amount2 > 50){
 															 int bundle6=amount2 * 5;
-															 printf("confirm purchase of %d MB for %ld",bundle6,other);
+															 printf("confirm purchase of %d MB for %ld\n",bundle6,other);
 															 printf("1.Accept\n");
 															 printf("2.Cancel\n");
+															 printf("enter option:");
 															 scanf("%d",&accept6);
 															 {
 															 	if(accept6 == 1){
@@ -117,8 +118,8 @@
 																		 printf("You have cancelled the transcation");}}}}}}
   
                                                          
-                          else if
-                          	 (option2 == 3){
+                          else {
+                          	 if(option2 == 3){
                           	 	int okoa;
                           	 	printf("1.Okoa 63MB for sh20\n");
                           	 	printf("2.Okoa 40MB for sh18\n");
@@ -135,11 +136,11 @@
 													(okoa == 3){
 														printf("Thanks for Purchasing 10MB.Okoa Outstanding balance is sh5");}
 														else {
-															printf("Invalid Entry");}}}
+															printf("Invalid Entry");}}}}}}
 																							
 								 
-                 else if
-                 	(option == 2){
+                 else {
+                 	if(option == 2){
                  	  int choice,amount3;
 					 	printf("1.Buy For My Number\n");
                  		printf("2.Buy For Other Number\n");
@@ -177,67 +178,9 @@
 												if(accept8 == 1){
 													printf("You have bought sh%d Calls & SMS Bundle for %ld",airtime2,other2);}
 													 else {
-														 printf("You have cancelled the subscription");}}}}}}
+														 printf("You have cancelled the subscription");}}}}}}}}}
 														 
-                    else {
-                    	int choice2;
-						if(option == 3){
-							printf("0.SPECIAL DATA DEALS\n");
-							printf("1.All In One Bundle\n");
-							printf("2.Daily Bundle\n");
-							printf("3.7 Day Bundle\n");
-							printf("4.30 Day Bundle\n");
-							printf("5.Giga Bundle\n");
-							printf("enter choice:");
-							scanf("%d",&choice2);
-							
-							  if(choice2 == 0){
-							  	int offer;
-							 	printf("0.Get Your Free 500MB\n");
-								printf("1.sh20(250MB valid for 24hours)\n");
-								printf("2.sh20(1GB valid I hour)\n");
-								scanf("%d",&offer); 
-								{
-								  if(offer == 0){
-								  	int accept9;
-									  printf("Buy 325MB for sh65 and FREE 500MB EXPIRY TILL MIDNIGHT\n");
-									  printf("press 1 to accept or 2 to cancel:");
-									  scanf("%d",&accept9);
-									  {
-									  	if(accept9 == 1){
-											  printf("You have successfully purchased 325MB for sh65 and FREE 500MB EXPIRY TILL MIDNIGHT");}
-											  else {
-												  printf("You have cancelled the transcation");}}}
-												  
-									   else if 			  
-											(offer == 1){
-												int accept10;
-												printf("confirm purchase of 250MB VALID TILL MIDNIGHT\n");
-												printf("press 1 to accept or 2 to cancel:");
-												scanf("%d",&accept10);
-												{
-												  if(accept10 == 1){
-													  printf("You have purchased 250MB VALID FOR 24 HOURS");}
-													   else {
-														 printf("You have cancelled the transcation");}}}}}
-									   
-									  else {
-									  	int offer;
-										  if(offer == 2){
-											  int accept11;
-											  printf("Confirm Purchase of 1GB VALID 1  HOUR\n");
-											  printf("press 1 to accept or 2 to cancel:");
-											  scanf("%d",&accept11);
-											  {
-											  	if(accept11 == 1){
-													 printf("You have succesfully purchased IGB VALID 1 HOUR");}
-													   else {
-														   printf("You have cancelled the transcation");}}}}}
-														   
-								 else {
-									 printf("Services are unavailable"); }}}}}}
-								 						   
-														   
+                     					   
                         		 												   
 				 
               else {

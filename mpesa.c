@@ -180,8 +180,8 @@
 														 printf("You have cancelled the subscription");}}}}}}
 														 
                     else {
+                    	int choice2;
 						if(option == 3){
-							int choice2;
 							printf("0.SPECIAL DATA DEALS\n");
 							printf("1.All In One Bundle\n");
 							printf("2.Daily Bundle\n");
@@ -190,7 +190,7 @@
 							printf("5.Giga Bundle\n");
 							printf("enter choice:");
 							scanf("%d",&choice2);
-							{
+							
 							  if(choice2 == 0){
 							  	int offer;
 							 	printf("0.Get Your Free 500MB\n");
@@ -219,9 +219,10 @@
 												  if(accept10 == 1){
 													  printf("You have purchased 250MB VALID FOR 24 HOURS");}
 													   else {
-														 printf("You have cancelled the transcation");}}}
+														 printf("You have cancelled the transcation");}}}}}
 									   
 									  else {
+									  	int offer;
 										  if(offer == 2){
 											  int accept11;
 											  printf("Confirm Purchase of 1GB VALID 1  HOUR\n");
@@ -231,7 +232,11 @@
 											  	if(accept11 == 1){
 													 printf("You have succesfully purchased IGB VALID 1 HOUR");}
 													   else {
-														   printf("You have cancelled the transcation");}}}}}}
+														   printf("You have cancelled the transcation");}}}}}
+														   
+								 else {
+									 printf("Services are unavailable"); }}}}}}
+								 						   
 														   
                         		 												   
 				 

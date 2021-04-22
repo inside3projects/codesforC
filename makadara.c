@@ -1,8 +1,13 @@
 #include<stdio.h>
   int main(){
-	  int key,payment1,payment4,id,phone;
+	  int key,payment1,payment4,id,phone,pass;
 	  char names[20],second[20],surname[20];
 	  
+	  printf("enter password:");
+	  scanf("%d",&pass);
+	     
+	     if(pass == 1234){
+	     	
 	  printf("WELCOME TO MAKADARA TRAIN BOOKING PORTAL\n");
 	  printf("CLASS TYPE        CHARGES PER SEAT    SESSIONKEY\n");
 	  printf("FIRST CLASS          sh1500            1\n");
@@ -27,11 +32,7 @@
 								  	if(payment1 == 5){
 										  printf("do you wish to pay sh 1500 to MAKADARA TRAIN EXPRESS\n");
 										  printf("press 3 to accept or  4 to drop the request");
-										  scanf("%d",&payment4); }
-										     else {
-										     	if(payment1 == 6){
-												 printf("Payment booking was cancelled"); }}
-												 
+										  scanf("%d",&payment4);
 												 {
 												 	if(payment4 == 3){
 														 printf("BOOKING WAS SUCCESFUL\n");
@@ -42,7 +43,11 @@
 														 printf("DEPARTURE TIME:   0800HRS"); }
 														   else {
 														   	if(payment4 == 4){
-															   printf("BOOKING REQUEST WAS CANCELLED"); }}}}}
+															   printf("BOOKING REQUEST WAS CANCELLED");}}}}
+															   
+													else {
+														printf("You cancelledd the payment"); }}}
+
 															   
                                else {
 							      if(key ==  2){
@@ -61,11 +66,7 @@
 								  	if(payment1 == 5){
 										  printf("do you wish to pay sh 700 to MAKADARA TRAIN EXPRESS\n");
 										  printf("press 3 to accept or  4 to drop the request");
-										  scanf("%d",&payment4);}
-										     else {
-										     	if(payment1 == 6){
-												 printf("Payment booking was cancelled"); }}
-												 
+										  scanf("%d",&payment4);
 												 {
 												 	if(payment4 == 3){
 														 printf("BOOKING WAS SUCCESFUL\n");
@@ -76,6 +77,14 @@
 														 printf("DEPARTURE TIME:   0800HRS"); }
 														   else {
 														   	if(payment4 == 4){
-															   printf("BOOKING REQUEST WAS CANCELLED"); }}}}}}
+															   printf("BOOKING REQUEST WAS CANCELLED");}}}}
+															   
+															else {
+																printf("You cancelled the payment");}}}}}
+															  
+															   
+								else {
+									printf("wrong password"); }
+														   
 							      	
 	  return 0 ; }
